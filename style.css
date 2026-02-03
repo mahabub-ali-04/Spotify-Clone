@@ -183,7 +183,9 @@ a {
 
 .cards-container {
     display: flex;
+    justify-content: flex-start;
     flex-wrap: wrap;
+
 
 }
 
@@ -225,6 +227,23 @@ a {
     width: 25%;
     
 }
+.album-control{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 0.3rem;
+}
+.album-control img{
+    width: 20%;
+    
+    
+}
+@media (max-width:1015px){
+    .album-hide{
+        display: none;
+    }
+   
+}
 
 .player {
     width: 50%;
@@ -240,6 +259,35 @@ a {
 .controls {
     width: 25%;
     
+    
+    
+}
+.controls-icon{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+.controls-icon img{
+    width: 6%;
+}
+.controls-icon input{
+    appearance: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.range-bar::-webkit-slider-runnable-track{
+    background-color: #ddd;
+    height: 0.2rem;
+    border-radius: 100%;
+}
+.range-bar::-webkit-slider-thumb{
+    appearance: none;
+    height: 1rem;
+    width: 1rem;
+    background-color: #fff;
+    border-radius: 100%;
+    margin-top: -6px;
 }
 
 .player-control-icon {
